@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace hello
 {
+    
     class Program
     {
+
+        
+
         static void Main(string[] args)
         {
+            hallo h = new hallo();
+            Tschuess t = new Tschuess();
+
             string name;
-            Console.WriteLine("What's your name?");
-            name = Console.ReadLine().ToString();
 
-            Console.WriteLine("Hello " + name + "!");
-
-
+            name = h.sayHello();
+            t.sayBye(name);
+            
 
         }
     }
